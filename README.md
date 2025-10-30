@@ -11,7 +11,8 @@
 
 ## 📌 APK
 > 🔥 *Interfaz con animaciones fluidas y tiempos de carga optimizados*
-[Descargar APK]([https://github.com/SG210007/DSM_02L_D3/blob/apk/app-debug%20.apk](https://github.com/SG210007/DSM_02L_D3/releases/download/v1.0.0-beta/app-debug.apk
+> 
+[Descargar APK](https://github.com/SG210007/DSM_02L_D3/blob/apk/app-debug%20.apk](https://github.com/SG210007/DSM_02L_D3/releases/download/v1.0.0-beta/app-debug.apk
 )
 
 ## 👥 Equipo de desarrollo
