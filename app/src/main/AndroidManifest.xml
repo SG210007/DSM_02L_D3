@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permisos para que la app tenga acceso a internet y pueda verificar el estado de red -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppLista_"
+        tools:targetApi="31"
+        android:icon="@mipmap/ic_launcher">
+
+        <!-- Pantalla inicial (Splash) que se muestra al abrir la app -->
+        <activity
+            android:name=".view.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <!-- Acción principal: indica que esta es la primera actividad al abrir la app -->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- Categoría LAUNCHER: muestra el ícono de la app en el menú del teléfono -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Actividades principales de la app -->
+        <activity android:name=".view.MainActivity" /> <!-- Actividad principal del contenido -->
+        <activity android:name=".view.RegionsActivity" /> <!-- Muestra las regiones -->
+        <activity android:name=".view.CountriesActivity" /> <!-- Lista de países -->
+        <activity android:name=".view.CountryDetailActivity" /> <!-- Detalle de cada país -->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Bandera -->
+        <ImageView
+            android:id="@+id/flagImageView"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:contentDescription="Bandera del país" />
+
+        <!-- Información del País -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Información del País"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/capitalTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capital" />
+
+        <TextView
+            android:id="@+id/regionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Región" />
+
+        <TextView
+            android:id="@+id/populationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Población" />
+
+        <TextView
+            android:id="@+id/codesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Códigos" />
+
+        <TextView
+            android:id="@+id/currenciesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monedas" />
+
+        <TextView
+            android:id="@+id/languagesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Idiomas" />
+
+        <TextView
+            android:id="@+id/coordinatesTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coordenadas" />
+
+        <!-- Clima -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clima Actual"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <ProgressBar
+            android:id="@+id/weatherProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/weatherLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/weatherIconImageView"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="Icono del clima" />
+
+                <TextView
+                    android:id="@+id/temperatureTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temperatura"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/conditionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Condición" />
+
+            <TextView
+                android:id="@+id/windTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Viento" />
+
+            <TextView
+                android:id="@+id/humidityTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Humedad" />
+
+            <TextView
+                android:id="@+id/feelsLikeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sensación térmica" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/weatherErrorTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>
